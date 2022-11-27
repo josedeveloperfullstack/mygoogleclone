@@ -68,13 +68,6 @@ main {
   outline: none;
 }
 
-#buscador_principal::after{
-  content: '🎙️';
-}
-
-#buscador_principal::before{
-  content: '🔎';
-}
 
 .anuncio a {
   color: blue;
@@ -87,7 +80,41 @@ main {
 button{
   border: transparent;
   padding: 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;  
+}
 
+button:active{
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
 
+#profilepicture {
+  border-radius: 999px;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  background-color: #f1f1f1;
+  font-size: 18px;
+}
+
+.pais{
+  border-bottom: 1px solid #d9dbdf;  
+  display: block;
+  padding: 15px;
+}
+
+.menu_secundario {
+  display: flex;
+  justify-content: space-around;
+}
